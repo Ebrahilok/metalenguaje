@@ -43,9 +43,10 @@ pregunta abierta "¿Qué significan las siglas DSL?" puntos 1
 |---|---|
 | Ebrahim Ali | Product Owner y Development Team |
 | Rey David Ayala Noriega | Scrum Master y Development Team |
-| *(lugar disponible)* | Development Team |
+| Jesus Armando Molina Garcia | Development Team |
+| Juan Anyelo Valberde Lopez | Development Team |
 
-Todos participamos en el desarrollo, aunque cada quien tenga un rol definido. Si entra un tercer integrante se agrega a esta tabla y al documento de roles.
+Todos participamos en el desarrollo, aunque cada quien tenga un rol definido.
 
 ## Documentación
 
