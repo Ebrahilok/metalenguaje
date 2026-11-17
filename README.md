@@ -11,7 +11,7 @@ El proyecto se trabaja con **Scrum** en 4 sprints de una semana.
 | Etapa | Contenido | Estado |
 |---|---|---|
 | Semana 0: Preparación | Visión, backlog inicial, Definition of Done, roles | ✅ Entregada |
-| Sprint 1: Fundamentos y especificación | Investigación de metalenguajes, gramática y notación v0.1 | ⏳ Pendiente |
+| Sprint 1: Fundamentos y especificación | Investigación de metalenguajes, gramática y notación v0.1, contratos entre las partes del programa | ⏳ Pendiente |
 | Sprint 2: Núcleo | Analizador léxico y sintáctico, semántica, pruebas unitarias | ⏳ Pendiente |
 | Sprint 3: Ampliación y validación | Más construcciones, mensajes de error, ejemplos, validación con la docente | ⏳ Pendiente |
 | Sprint 4: Cierre | Manual de usuario, documentación técnica, demo final | ⏳ Pendiente |

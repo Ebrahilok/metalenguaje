@@ -9,4 +9,4 @@ Una historia de usuario se considera **terminada** solo si cumple con todo lo si
 5. **Ejemplos:** si se agrega una construcción nueva al lenguaje, se agrega al menos un ejemplo válido y uno inválido en la carpeta `ejemplos/`.
 6. **Tablero al día:** la tarjeta de la historia está en la columna "Terminado" del tablero.
 
-Para historias que solo son documentos (por ejemplo, la investigación o la especificación), los puntos 1, 2 y 5 se cambian por esto: el documento está en el repositorio, en formato Markdown y revisado por otro integrante.
+Para las historias técnicas que solo son documentos (HT-01 investigación, HT-02 especificación y HT-03 contratos), los puntos 1, 2 y 5 se cambian por esto: el documento está en el repositorio, en formato Markdown y revisado por otro integrante.

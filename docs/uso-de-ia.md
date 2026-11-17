@@ -5,6 +5,7 @@ Como lo permite el enunciado del proyecto, el equipo usó herramientas de inteli
 | Fecha | Herramienta | Para qué se usó | Qué revisó o cambió el equipo |
 |---|---|---|---|
 | 12/11/2026 | Claude (Anthropic) | Apoyo para redactar la visión del producto, el backlog inicial, la Definition of Done y el README de la Semana 0, y para preparar la estructura del repositorio. | El equipo eligió el dominio (cuestionarios), los roles y el alcance, y revisó y ajustó los documentos. |
+| 17/11/2026 | Claude (Anthropic) | Apoyo para aplicar las correcciones de la profesora al backlog: unir historias parecidas, separar las historias técnicas y agregar la vista de historias. | El equipo revisó que los criterios de aceptación y los puntos tuvieran sentido. |
 
 ## Compromiso del equipo
 
