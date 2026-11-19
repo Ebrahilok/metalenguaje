@@ -1,186 +1,258 @@
-# Product Backlog inicial
+# Product Backlog por sprint
 
-**Responsable:** Ebrahim Ali (Product Owner)
-**Última actualización:** 17 de noviembre de 2026
+**Responsable:** Ebrahim Ali (Product Owner)  
+**Última actualización:** 19 de noviembre de 2026
 
-Las historias están ordenadas por prioridad (la de arriba es la más importante). La estimación está en **puntos de historia** con la escala 1, 2, 3, 5, 8. Es una medida del esfuerzo relativo y no son horas. El sprint sugerido es tentativo y se confirma en cada Sprint Planning.
+Las historias técnicas y las de usuario están mezcladas y ordenadas por sprint. Dentro de cada sprint, la de prioridad más alta va arriba. La estimación está en **puntos de historia** con la escala 1, 2, 3, 5, 8: es una medida del esfuerzo relativo y no son horas. El sprint asignado es tentativo y se confirma en cada Sprint Planning.
 
-El backlog se divide en dos partes: las **historias de usuario** (lo que necesita una persona que usa la herramienta) y las **historias técnicas** (trabajo interno del equipo que no tiene un usuario final, pero que hace falta para poder construir el resto). Las historias técnicas no se escriben con el formato "Como… quiero… para…" y por eso están en su propio apartado.
+## Backlog priorizado
 
-## Resumen
-
-### Historias de usuario
-
-| ID | Historia | Prioridad | Puntos | Sprint sugerido |
+| ID | Historia | Prioridad | Estimación | Asignación |
 |---|---|---|---|---|
-| HU-01 | Crear un cuestionario con título y comentarios | Alta | 5 | 2 |
-| HU-02 | Preguntas de opción múltiple y de verdadero/falso | Alta | 5 | 2 |
-| HU-03 | Preguntas de respuesta abierta | Alta | 3 | 3 |
-| HU-04 | Puntos por pregunta y secciones | Media | 5 | 3 |
-| HU-05 | Mensajes de error con número de línea | Alta | 5 | 2 |
-| HU-06 | Aplicar el cuestionario en consola | Alta | 8 | 3 |
-| HU-07 | Retroalimentación y orden aleatorio | Baja | 5 | 4 |
-| HU-08 | Exportar el cuestionario a JSON y HTML | Media | 8 | 4 |
-| HU-09 | Manual de usuario con ejemplos | Alta | 3 | 4 |
+| HT-01 | Investigar metalenguajes existentes | Alta (1) | 3 SP | Sprint 1 |
+| HT-02 | Especificación del lenguaje (gramática y notación) | Alta (2) | 5 SP | Sprint 1 |
+| HT-03 | Definir los contratos entre las partes del programa | Alta (3) | 3 SP | Sprint 1 |
+| HU-01 | Crear un cuestionario con título y comentarios | Alta (4) | 5 SP | Sprint 2 |
+| HU-02 | Preguntas de opción múltiple y de verdadero/falso | Alta (5) | 5 SP | Sprint 2 |
+| HU-05 | Mensajes de error con número de línea | Alta (6) | 5 SP | Sprint 2 |
+| HU-03 | Preguntas de respuesta abierta | Alta (7) | 3 SP | Sprint 3 |
+| HU-06 | Aplicar el cuestionario en consola | Alta (8) | 8 SP | Sprint 3 |
+| HU-04 | Puntos por pregunta y secciones | Media (9) | 5 SP | Sprint 3 |
+| HU-09 | Manual de usuario con ejemplos | Alta (10) | 3 SP | Sprint 4 |
+| HU-08 | Exportar el cuestionario a JSON y HTML | Media (11) | 8 SP | Sprint 4 |
+| HU-07 | Retroalimentación y orden aleatorio | Baja (12) | 5 SP | Sprint 4 |
 
-**Total de historias de usuario:** 47 puntos.
+**Historias de usuario:** 47 puntos. **Historias técnicas:** 11 puntos. **Total del backlog:** 58 puntos.
 
-### Historias técnicas
+## Historias por sprint
 
-| ID | Historia técnica | Prioridad | Puntos | Sprint sugerido |
-|---|---|---|---|---|
-| HT-01 | Investigar metalenguajes existentes | Alta | 3 | 1 |
-| HT-02 | Especificación del lenguaje (gramática y notación) | Alta | 5 | 1 |
-| HT-03 | Definir los contratos entre las partes del programa | Alta | 3 | 1 |
+### Sprint 1: Fundamentos y especificación v0.1
 
-**Total de historias técnicas:** 11 puntos.
+16 al 22 de noviembre de 2026. Puntos comprometidos: 11.
 
-**Total del backlog:** 58 puntos.
+#### HT-01: Investigar metalenguajes existentes
 
-## Vista de historias (solo el enunciado)
+Historia técnica | Prioridad Alta | 3 puntos | Sprint 1
 
-Aquí se ven únicamente las historias, sin criterios de aceptación, para tener una lista rapida de todo lo que se va a construir.
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Equipo de desarrollo | revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL) | tomar ideas y no copiar uno que ya existe |
 
-### Historias de usuario
+**Criterios de aceptación**
 
-- **HU-01:** Como docente, quiero crear un archivo `.cst` con el nombre del cuestionario y poder dejar notas dentro, para empezar a armarlo y recordar de dónde saqué cada pregunta.
-- **HU-02:** Como docente, quiero escribir preguntas de opción múltiple y de verdadero/falso, para hacer preguntas de selección y preguntas rápidas.
-- **HU-03:** Como docente, quiero escribir una pregunta donde el alumno escribe la respuesta, para evaluar definiciones cortas.
-- **HU-04:** Como docente, quiero asignar puntos a cada pregunta y dividir el cuestionario en secciones, para que la calificación sea justa y los temas estén organizados.
-- **HU-05:** Como docente, quiero que cuando me equivoque el programa me diga la línea y el problema, para corregirlo rápido.
-- **HU-06:** Como estudiante, quiero contestar el cuestionario en la terminal, para practicar y ver mi calificación.
-- **HU-07:** Como docente, quiero explicar cada respuesta y hacer que las preguntas salgan en desorden, para que el alumno entienda en qué se equivocó y no se copien entre ellos.
-- **HU-08:** Como docente o desarrollador, quiero obtener el cuestionario en JSON y en una página HTML, para usarlo en otra aplicación o compartirlo con los alumnos.
-- **HU-09:** Como docente, quiero un manual corto con ejemplos, para aprender a usar el lenguaje sin ayuda.
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Metalenguajes revisados | La investigación está terminada | Se revisa el documento | Tiene al menos 4 metalenguajes revisados |
+| 2. Detalle de cada uno | Un metalenguaje ya revisado | Se lee su sección | Anota qué describe, cómo es su notación y qué idea nos sirve |
+| 3. Fuentes | El documento de investigación | Se revisan las referencias | Las fuentes están citadas |
+| 4. Conclusión | El documento llegó al final | Se lee el último apartado | Termina con una conclusión de qué ideas se van a usar en Cuestiona |
 
-### Historias técnicas
+#### HT-02: Especificación del lenguaje (gramática y notación)
 
-- **HT-01:** Revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL), para tomar ideas y no copiar uno que ya existe.
-- **HT-02:** Escribir la especificación del lenguaje (gramática y notación), para que el equipo y la docente sepan qué se puede escribir y qué no.
-- **HT-03:** Definir los contratos entre las partes del programa, para que cada integrante pueda trabajar su parte sin esperar a que otra esté terminada.
+Historia técnica | Prioridad Alta | 5 puntos | Sprint 1
 
----
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Equipo de desarrollo | escribir la especificación del lenguaje (gramática y notación) | que el equipo y la profesora sepan qué se puede escribir y qué no |
 
-## Historias de usuario y criterios de aceptación
+**Criterios de aceptación**
 
-### HU-01: Crear un cuestionario con título y comentarios
-**Como** docente, **quiero** crear un archivo `.cst` con el nombre del cuestionario y poder dejar notas dentro **para** empezar a armarlo y recordar de dónde saqué cada pregunta.
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Gramática | La especificación está escrita | Se revisa la gramática | Está en EBNF (una forma estándar de escribir las reglas de un lenguaje) |
+| 2. Notación con ejemplos | La especificación está escrita | Se revisa la notación | Se explica con al menos un ejemplo por tipo de pregunta |
+| 3. Palabras clave | La especificación está escrita | Se compara con el backlog | Cubre cuestionario, seccion, pregunta, puntos, respuesta, acepta, explicacion, aleatorio y los comentarios con # |
+| 4. Versión | La especificación está terminada | Se guarda en el repositorio | El documento está marcado como versión 0.1 |
 
-Criterios de aceptación:
-- Un archivo con `cuestionario "Título"` se procesa sin errores.
-- Si falta el título o está vacío, se muestra un error que lo indica.
-- El programa muestra cuántas preguntas encontró.
-- Todo lo que va después de `#` en una línea se ignora.
-- Un `#` dentro de un texto entre comillas no cuenta como comentario.
-- Un archivo vacío o que solo tiene comentarios se marca como error, porque no tiene título.
+#### HT-03: Definir los contratos entre las partes del programa
 
-### HU-02: Preguntas de opción múltiple y de verdadero/falso
-**Como** docente, **quiero** escribir preguntas con varias opciones (marcando la correcta) y preguntas de verdadero o falso **para** hacer preguntas de selección y preguntas rápidas.
+Historia técnica | Prioridad Alta | 3 puntos | Sprint 1
 
-Criterios de aceptación:
-- En opción múltiple, la opción correcta se marca con `*` y las incorrectas con `-`.
-- Una pregunta de opción múltiple necesita al menos 2 opciones.
-- Si ninguna opción está marcada como correcta, se muestra un error.
-- Si hay más de una opción marcada como correcta, se muestra un error.
-- En verdadero/falso, la respuesta se indica con `respuesta verdadero` o `respuesta falso`.
-- Cualquier otro valor en `respuesta` se marca como error.
-- Si una pregunta de verdadero/falso no tiene `respuesta`, se muestra un error.
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Equipo de desarrollo | definir qué recibe y qué devuelve cada parte del programa (analizador, validador, intérprete y exportadores) | que cada integrante pueda trabajar su parte sin esperar a que otra esté terminada |
 
-### HU-03: Preguntas de respuesta abierta
-**Como** docente, **quiero** escribir una pregunta donde el alumno escribe la respuesta **para** evaluar definiciones cortas.
+**Criterios de aceptación**
 
-Criterios de aceptación:
-- Se pueden indicar varias respuestas aceptadas con `acepta "a", "b"`.
-- Una pregunta abierta necesita al menos una respuesta aceptada, si no se muestra un error.
-- La comparación ignora mayúsculas, acentos y espacios de más.
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Estructura del cuestionario | El documento de contratos | Se revisa la estructura del cuestionario ya leído | Están definidos cuestionario, sección, pregunta y opción con sus campos |
+| 2. Formato de error | El documento de contratos | Se revisa cómo se reporta un error | Está definido con archivo, línea, columna y mensaje |
+| 3. Entradas y salidas | Una parte del programa (analizador, validador, intérprete o exportadores) | Se consulta el documento | Indica qué datos recibe y cuáles devuelve |
+| 4. Revisión del equipo | El documento está terminado | Antes de empezar a programar | Está en el repositorio, en Markdown, y todo el equipo lo revisó |
 
-### HU-04: Puntos por pregunta y secciones
-**Como** docente, **quiero** asignar puntos a cada pregunta y dividir el cuestionario en secciones **para** que la calificación sea justa y los temas estén organizados.
+### Sprint 2: Núcleo, analizador y validador
 
-Criterios de aceptación:
-- Se escribe `puntos N` en la pregunta. Si no se pone, vale 1 punto.
-- Un valor negativo, cero o que no es número se marca como error.
-- El programa calcula el total del cuestionario.
-- `seccion "Nombre"` agrupa las preguntas que siguen hasta la siguiente sección.
-- Las preguntas que están antes de la primera sección quedan en una sección general.
-- El resultado muestra el puntaje por sección y el total.
+23 al 29 de noviembre de 2026. Puntos comprometidos: 15.
 
-### HU-05: Mensajes de error con número de línea
-**Como** docente, **quiero** que cuando me equivoque el programa me diga la línea y el problema **para** corregirlo rápido.
+#### HU-01: Crear un cuestionario con título y comentarios
 
-Criterios de aceptación:
-- Cada error indica el archivo, la línea y la columna.
-- El mensaje está en español y sin términos internos del analizador.
-- Si hay varios errores, se muestran todos y no solo el primero.
-- Al final se muestra cuántos errores se encontraron.
+Historia de usuario | Prioridad Alta | 5 puntos | Sprint 2
 
-### HU-06: Aplicar el cuestionario en consola
-**Como** estudiante, **quiero** contestar el cuestionario en la terminal **para** practicar y ver mi calificación.
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente | crear un archivo .cst con el nombre del cuestionario y poder dejar notas dentro | empezar a armarlo y recordar de dónde saqué cada pregunta |
 
-Criterios de aceptación:
-- Se muestran las preguntas una por una, con su sección y sus puntos.
-- Una respuesta inválida (por ejemplo, una letra que no existe) se vuelve a preguntar.
-- Al final se ve la calificación total y por sección.
-- Al final se muestran qué preguntas estuvieron mal y cuál era la respuesta correcta.
-- Si el archivo tiene errores, el cuestionario no se aplica y se muestran los errores.
+**Criterios de aceptación**
 
-### HU-07: Retroalimentación y orden aleatorio
-**Como** docente, **quiero** escribir una explicación para cada pregunta y hacer que las preguntas y opciones salgan en desorden **para** que el alumno entienda en qué se equivocó y no se copien entre ellos.
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Título válido | Un archivo con cuestionario "Título" | Se procesa el archivo | Se procesa sin errores |
+| 2. Sin título | Un archivo sin título o con el título vacío | Se procesa el archivo | Muestra un error que indica que falta el título |
+| 3. Conteo de preguntas | Un archivo válido con preguntas | Se procesa el archivo | Muestra cuántas preguntas encontró |
+| 4. Comentarios | Una línea con # | Se procesa la línea | Todo lo que va después del # se ignora |
+| 5. # dentro de comillas | Un # dentro de un texto entre comillas | Se procesa la línea | No cuenta como comentario |
+| 6. Archivo sin contenido | Un archivo vacío o que solo tiene comentarios | Se procesa el archivo | Se marca como error, porque no tiene título |
 
-Criterios de aceptación:
-- La explicación se escribe con `explicacion "texto"` dentro de la pregunta.
-- La explicación se muestra solo si la respuesta fue incorrecta.
-- Una pregunta sin `explicacion` funciona igual que antes.
-- El orden aleatorio se activa con `aleatorio` en el encabezado del cuestionario.
-- La opción correcta se sigue calificando bien aunque cambie de lugar.
-- Sin `aleatorio`, el orden es el mismo que en el archivo.
+#### HU-02: Preguntas de opción múltiple y de verdadero/falso
 
-### HU-08: Exportar el cuestionario a JSON y HTML
-**Como** docente o desarrollador, **quiero** obtener el cuestionario en JSON y en una página HTML **para** usarlo en otra aplicación o compartirlo con los alumnos.
+Historia de usuario | Prioridad Alta | 5 puntos | Sprint 2
 
-Criterios de aceptación:
-- El comando de exportación genera un archivo `.json` válido.
-- El JSON conserva todas las preguntas, opciones, respuestas, puntos y secciones.
-- El comando de exportación genera un archivo `.html` con el cuestionario.
-- La página se abre en el navegador sin instalar nada.
-- Las respuestas correctas no aparecen en el código visible de la página para el alumno.
-- Si el archivo `.cst` tiene errores, no se genera ningún archivo y se muestran los errores.
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente | escribir preguntas con varias opciones (marcando la correcta) y preguntas de verdadero o falso | hacer preguntas de selección y preguntas rápidas |
 
-### HU-09: Manual de usuario con ejemplos
-**Como** docente, **quiero** un manual corto con ejemplos **para** aprender a usar el lenguaje sin ayuda.
+**Criterios de aceptación**
 
-Criterios de aceptación:
-- Incluye cómo instalar y ejecutar la herramienta.
-- Explica cada tipo de pregunta y cada palabra clave del lenguaje.
-- Tiene al menos 5 ejemplos válidos y 5 inválidos con el resultado esperado.
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Opción correcta | Una pregunta de opción múltiple | Se marca una opción con * y las demás con - | La opción con * es la correcta y las marcadas con - son incorrectas |
+| 2. Pocas opciones | Una pregunta con menos de 2 opciones | Se procesa el archivo | Muestra un error, porque necesita al menos 2 opciones |
+| 3. Sin opción correcta | Una pregunta donde ninguna opción tiene * | Se procesa el archivo | Muestra un error |
+| 4. Varias correctas | Una pregunta con más de una opción marcada con * | Se procesa el archivo | Muestra un error |
+| 5. Verdadero/falso válida | Una pregunta de verdadero/falso | Se escribe respuesta verdadero o respuesta falso | La respuesta se acepta |
+| 6. Valor inválido | Una pregunta de verdadero/falso | En respuesta se escribe otro valor | Se marca como error |
+| 7. Sin respuesta | Una pregunta de verdadero/falso sin respuesta | Se procesa el archivo | Muestra un error |
 
----
+#### HU-05: Mensajes de error con número de línea
 
-## Historias técnicas y criterios de aceptación
+Historia de usuario | Prioridad Alta | 5 puntos | Sprint 2
 
-### HT-01: Investigar metalenguajes existentes
-Revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL) para tomar ideas y no copiar uno que ya existe.
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente | que cuando me equivoque el programa me diga la línea y el problema | corregirlo rápido |
 
-Criterios de aceptación:
-- Existe un documento con al menos 4 metalenguajes revisados.
-- Por cada uno se anota qué describe, cómo es su notación y qué idea nos sirve.
-- Las fuentes están citadas.
-- El documento termina con una conclusión de qué ideas se van a usar en Cuestiona.
+**Criterios de aceptación**
 
-### HT-02: Especificación del lenguaje (gramática y notación)
-Escribir un documento que explique las reglas del lenguaje, para saber qué se puede escribir y qué no.
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Datos del error | Un archivo con un error | Se procesa el archivo | El error indica el archivo, la línea y la columna |
+| 2. Mensaje claro | Un error encontrado | Se muestra el mensaje | Está en español y sin términos internos del analizador |
+| 3. Varios errores | Un archivo con varios errores | Se procesa el archivo | Se muestran todos y no solo el primero |
+| 4. Conteo final | Un archivo con errores | Termina de procesarse | Al final se muestra cuántos errores se encontraron |
 
-Criterios de aceptación:
-- La gramática está escrita en EBNF (una forma estándar de escribir las reglas de un lenguaje).
-- Se explica la notación concreta con al menos un ejemplo por tipo de pregunta.
-- La especificación cubre todas las palabras clave del backlog (`cuestionario`, `seccion`, `pregunta`, `puntos`, `respuesta`, `acepta`, `explicacion`, `aleatorio` y los comentarios con `#`).
-- El documento está marcado como versión 0.1.
+### Sprint 3: Ampliación y validación con la profesora
 
-### HT-03: Definir los contratos entre las partes del programa
-Dejar por escrito qué recibe y qué devuelve cada parte del programa (analizador, validador, intérprete y exportadores), para que se pueda trabajar cada una por separado.
+30 de noviembre al 6 de diciembre de 2026. Puntos comprometidos: 16.
 
-Criterios de aceptación:
-- Está definida la estructura del cuestionario ya leído (cuestionario, sección, pregunta y opción) con sus campos.
-- Está definido el formato de un error (archivo, línea, columna y mensaje).
-- Por cada parte del programa se indica qué datos recibe y cuáles devuelve.
-- El documento está en el repositorio, en formato Markdown, y todo el equipo lo revisó antes de empezar a programar.
+#### HU-03: Preguntas de respuesta abierta
+
+Historia de usuario | Prioridad Alta | 3 puntos | Sprint 3
+
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente | escribir una pregunta donde el alumno escribe la respuesta | evaluar definiciones cortas |
+
+**Criterios de aceptación**
+
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Varias respuestas aceptadas | Una pregunta abierta | Se escribe acepta "a", "b" | Todas esas respuestas se aceptan como correctas |
+| 2. Sin respuestas aceptadas | Una pregunta abierta sin acepta | Se procesa el archivo | Muestra un error, porque necesita al menos una respuesta aceptada |
+| 3. Comparación flexible | Una respuesta aceptada y una respuesta del alumno | Se comparan | Se ignoran mayúsculas, acentos y espacios de más |
+
+#### HU-06: Aplicar el cuestionario en consola
+
+Historia de usuario | Prioridad Alta | 8 puntos | Sprint 3
+
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Estudiante | contestar el cuestionario en la terminal | practicar y ver mi calificación |
+
+**Criterios de aceptación**
+
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Preguntas una por una | Un cuestionario válido | El estudiante lo inicia | Se muestran las preguntas una por una, con su sección y sus puntos |
+| 2. Respuesta inválida | Una pregunta en pantalla | El estudiante escribe algo inválido (por ejemplo, una letra que no existe) | La pregunta se vuelve a hacer |
+| 3. Calificación | El estudiante contestó todo | Termina el cuestionario | Se ve la calificación total y por sección |
+| 4. Revisión de errores | El cuestionario terminó | Se muestra el resultado | Se ven las preguntas que estuvieron mal y cuál era la respuesta correcta |
+| 5. Archivo con errores | Un archivo .cst con errores | Se intenta aplicar | No se aplica y se muestran los errores |
+
+#### HU-04: Puntos por pregunta y secciones
+
+Historia de usuario | Prioridad Media | 5 puntos | Sprint 3
+
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente | asignar puntos a cada pregunta y dividir el cuestionario en secciones | que la calificación sea justa y los temas estén organizados |
+
+**Criterios de aceptación**
+
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Puntos de una pregunta | Una pregunta con puntos N | Se procesa el archivo | La pregunta vale N puntos |
+| 2. Sin puntos | Una pregunta sin puntos | Se procesa el archivo | Vale 1 punto |
+| 3. Valor inválido | Un valor negativo, cero o que no es número | Se procesa el archivo | Se marca como error |
+| 4. Total | Un cuestionario con puntos | Se procesa el archivo | El programa calcula el total |
+| 5. Sección | Una línea seccion "Nombre" | Se procesa el archivo | Agrupa las preguntas que siguen hasta la siguiente sección |
+| 6. Sin sección | Preguntas antes de la primera sección | Se procesa el archivo | Quedan en una sección general |
+| 7. Resultado por sección | Un cuestionario con secciones | Se muestra el resultado | Aparece el puntaje por sección y el total |
+
+### Sprint 4: Cierre, documentación y demostración
+
+7 al 13 de diciembre de 2026. Puntos comprometidos: 16.
+
+#### HU-09: Manual de usuario con ejemplos
+
+Historia de usuario | Prioridad Alta | 3 puntos | Sprint 4
+
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente | un manual corto con ejemplos | aprender a usar el lenguaje sin ayuda |
+
+**Criterios de aceptación**
+
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Instalación | El manual terminado | El docente lo lee | Incluye cómo instalar y ejecutar la herramienta |
+| 2. Palabras clave | El manual terminado | El docente busca una pregunta o palabra clave | Explica cada tipo de pregunta y cada palabra clave del lenguaje |
+| 3. Ejemplos | El manual terminado | Se revisan los ejemplos | Hay al menos 5 válidos y 5 inválidos con el resultado esperado |
+
+#### HU-08: Exportar el cuestionario a JSON y HTML
+
+Historia de usuario | Prioridad Media | 8 puntos | Sprint 4
+
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente o desarrollador | obtener el cuestionario en JSON y en una página HTML | usarlo en otra aplicación o compartirlo con los alumnos |
+
+**Criterios de aceptación**
+
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Exportar a JSON | Un cuestionario válido | Se usa el comando de exportación a JSON | Se genera un archivo .json válido |
+| 2. Contenido del JSON | Un archivo .json generado | Se revisa su contenido | Conserva todas las preguntas, opciones, respuestas, puntos y secciones |
+| 3. Exportar a HTML | Un cuestionario válido | Se usa el comando de exportación a HTML | Se genera un archivo .html con el cuestionario |
+| 4. Abrir la página | Un archivo .html generado | Se abre en el navegador | Funciona sin instalar nada |
+| 5. Respuestas ocultas | La página generada | El alumno revisa el código visible | Las respuestas correctas no aparecen |
+| 6. Archivo con errores | Un archivo .cst con errores | Se intenta exportar | No se genera ningún archivo y se muestran los errores |
+
+#### HU-07: Retroalimentación y orden aleatorio
+
+Historia de usuario | Prioridad Baja | 5 puntos | Sprint 4
+
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente | escribir una explicación para cada pregunta y hacer que las preguntas y opciones salgan en desorden | que el alumno entienda en qué se equivocó y no se copien entre ellos |
+
+**Criterios de aceptación**
+
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Explicación tras un error | Una pregunta con explicacion "texto" | El alumno responde mal | Se muestra la explicación |
+| 2. Respuesta correcta | Una pregunta con explicación | El alumno responde bien | La explicación no se muestra |
+| 3. Pregunta sin explicación | Una pregunta sin explicacion | Se aplica el cuestionario | Funciona igual que antes |
+| 4. Orden aleatorio | aleatorio en el encabezado del cuestionario | Se aplica el cuestionario | Las preguntas y las opciones salen en desorden |
+| 5. Calificación con desorden | Una opción correcta que cambió de lugar | El alumno la elige | Se califica bien |
+| 6. Sin aleatorio | Un cuestionario sin aleatorio | Se aplica el cuestionario | El orden es el mismo que en el archivo |
