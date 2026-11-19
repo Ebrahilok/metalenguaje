@@ -45,6 +45,7 @@ pregunta abierta "¿Qué significan las siglas DSL?" puntos 1
 | Rey David Ayala Noriega | Scrum Master y Development Team |
 | Jesus Armando Molina Garcia | Development Team |
 | Juan Anyelo Valberde Lopez | Development Team |
+| Xavier Estavillo Servin | Development Team |
 
 Todos participamos en el desarrollo, aunque cada quien tenga un rol definido.
 
