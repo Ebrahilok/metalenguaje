@@ -18,11 +18,12 @@ Las historias técnicas y las de usuario están mezcladas y ordenadas por sprint
 | HU-03 | Preguntas de respuesta abierta | Alta (7) | 3 SP | Sprint 3 |
 | HU-06 | Aplicar el cuestionario en consola | Alta (8) | 8 SP | Sprint 3 |
 | HU-04 | Puntos por pregunta y secciones | Media (9) | 5 SP | Sprint 3 |
-| HU-09 | Manual de usuario con ejemplos | Alta (10) | 3 SP | Sprint 4 |
-| HU-08 | Exportar el cuestionario a JSON y HTML | Media (11) | 8 SP | Sprint 4 |
-| HU-07 | Retroalimentación y orden aleatorio | Baja (12) | 5 SP | Sprint 4 |
+| HU-10 | Validar el lenguaje con la docente | Media (10) | 3 SP | Sprint 3 |
+| HU-09 | Manual de usuario con ejemplos | Alta (11) | 3 SP | Sprint 4 |
+| HU-08 | Exportar el cuestionario a JSON y HTML | Media (12) | 8 SP | Sprint 4 |
+| HU-07 | Retroalimentación y orden aleatorio | Baja (13) | 5 SP | Sprint 4 |
 
-**Historias de usuario:** 47 puntos. **Historias técnicas:** 11 puntos. **Total del backlog:** 58 puntos.
+**Historias de usuario:** 50 puntos. **Historias técnicas:** 11 puntos. **Total del backlog:** 61 puntos.
 
 ## Historias por sprint
 
@@ -143,7 +144,7 @@ Historia de usuario | Prioridad Alta | 5 puntos | Sprint 2
 
 ### Sprint 3: Ampliación y validación con la profesora
 
-30 de noviembre al 6 de diciembre de 2026. Puntos comprometidos: 16.
+30 de noviembre al 6 de diciembre de 2026. Puntos comprometidos: 19.
 
 #### HU-03: Preguntas de respuesta abierta
 
@@ -198,6 +199,23 @@ Historia de usuario | Prioridad Media | 5 puntos | Sprint 3
 | 5. Sección | Una línea seccion "Nombre" | Se procesa el archivo | Agrupa las preguntas que siguen hasta la siguiente sección |
 | 6. Sin sección | Preguntas antes de la primera sección | Se procesa el archivo | Quedan en una sección general |
 | 7. Resultado por sección | Un cuestionario con secciones | Se muestra el resultado | Aparece el puntaje por sección y el total |
+
+#### HU-10: Validar el lenguaje con la docente
+
+Historia de usuario | Prioridad Media | 3 puntos | Sprint 3
+
+| Rol (Como) | Acción (Quiero) | Beneficio (Para) |
+|---|---|---|
+| Docente | probar la herramienta con un cuestionario mío y dar mi opinión | confirmar que el lenguaje me sirve y detectar qué le falta |
+
+**Criterios de aceptación**
+
+| Escenario | Dado que (Contexto) | Cuando (Acción) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Cuestionario real | Un cuestionario de la docente con 10 o más preguntas | Lo escribe en un archivo .cst y lo procesa | Lo logra sin tener que tocar código |
+| 2. Errores entendibles | Un error en el archivo de la docente | La herramienta muestra el mensaje | La docente lo entiende sin que el equipo se lo explique |
+| 3. Registro de comentarios | La docente terminó de probar la herramienta | Se hace el Sprint Review | Sus comentarios quedan anotados en el acta |
+| 4. Cambios al backlog | Comentarios que piden cambios | Se revisan en el Sprint Review | Se agregan al backlog con su prioridad |
 
 ### Sprint 4: Cierre, documentación y demostración
 
