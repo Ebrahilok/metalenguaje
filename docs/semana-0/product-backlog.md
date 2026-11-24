@@ -3,7 +3,7 @@
 **Responsable:** Ebrahim Ali (Product Owner)  
 **Última actualización:** 24 de noviembre de 2026
 
-Las historias de usuario (HU) y las técnicas (HT) van en tablas separadas. En cada tabla están ordenadas por sprint y, dentro de cada sprint, la de prioridad más alta va arriba. La estimación está en **puntos de historia (SP)** con la escala 1, 2, 3, 5, 8: es esfuerzo relativo, no horas. El sprint asignado se confirma en cada Sprint Planning.
+Las historias de usuario (HU) y las técnicas (HT) van en tablas separadas y cada tipo usa su propio formato. En cada tabla están ordenadas por sprint y, dentro de cada sprint, la de prioridad más alta va arriba. La estimación está en **puntos de historia (SP)** con la escala 1, 2, 3, 5, 8: es esfuerzo relativo, no horas. El sprint asignado se confirma en cada Sprint Planning.
 
 ## Backlog: historias de usuario (50 SP)
 
@@ -36,47 +36,62 @@ Las historias de usuario (HU) y las técnicas (HT) van en tablas separadas. En c
 
 Del 16 al 22 de noviembre de 2026.
 
+#### HU Técnica: HT-01 Investigar metalenguajes existentes
+
 Prioridad Alta | 3 SP | Sprint 1
 
-| CUESTIONA | |
+| | |
 |---|---|
-| **HT-01** | Investigar metalenguajes existentes |
-| **HISTORIA** | **Como equipo de desarrollo, quiero revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL), para tomar ideas y no copiar uno que ya existe.** |
-| **ROL** | Equipo de desarrollo |
-| **ACCIÓN** | Revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL) |
-| **PARA** | Tomar ideas y no copiar uno que ya existe |
-| **CA1** | **Metalenguajes revisados:** dado que la investigación está terminada, cuando se revisa el documento, entonces tiene al menos 4 metalenguajes revisados. |
-| **CA2** | **Detalle de cada uno:** dado que un metalenguaje ya revisado, cuando se lee su sección, entonces anota qué describe, cómo es su notación y qué idea nos sirve. |
-| **CA3** | **Fuentes:** dado que el documento de investigación, cuando se revisan las referencias, entonces las fuentes están citadas. |
-| **CA4** | **Conclusión:** dado que el documento llegó al final, cuando se lee el último apartado, entonces termina con una conclusión de qué ideas se van a usar en Cuestiona. |
+| **Como:** | Equipo de desarrollo |
+| **Quiero:** | Revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL) |
+| **Para:** | Tomar ideas y no copiar uno que ya existe |
+
+**Criterios de Aceptación Técnicos**
+
+| Escenario | Dado (Entrada / Estado) | Cuando (Lógica) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Metalenguajes revisados | La investigación está terminada | Se revisa el documento | Tiene al menos 4 metalenguajes revisados |
+| 2. Detalle de cada uno | Un metalenguaje ya revisado | Se lee su sección | Anota qué describe, cómo es su notación y qué idea nos sirve |
+| 3. Fuentes | El documento de investigación | Se revisan las referencias | Las fuentes están citadas |
+| 4. Conclusión | El documento llegó al final | Se lee el último apartado | Termina con una conclusión de qué ideas se van a usar en Cuestiona |
+
+#### HU Técnica: HT-02 Especificación del lenguaje (gramática y notación)
 
 Prioridad Alta | 5 SP | Sprint 1
 
-| CUESTIONA | |
+| | |
 |---|---|
-| **HT-02** | Especificación del lenguaje (gramática y notación) |
-| **HISTORIA** | **Como equipo de desarrollo, quiero escribir la especificación del lenguaje (gramática y notación), para que el equipo y la profesora sepan qué se puede escribir y qué no.** |
-| **ROL** | Equipo de desarrollo |
-| **ACCIÓN** | Escribir la especificación del lenguaje (gramática y notación) |
-| **PARA** | Que el equipo y la profesora sepan qué se puede escribir y qué no |
-| **CA1** | **Gramática:** dado que la especificación está escrita, cuando se revisa la gramática, entonces está en EBNF (una forma estándar de escribir las reglas de un lenguaje). |
-| **CA2** | **Notación con ejemplos:** dado que la especificación está escrita, cuando se revisa la notación, entonces se explica con al menos un ejemplo por tipo de pregunta. |
-| **CA3** | **Palabras clave:** dado que la especificación está escrita, cuando se compara con el backlog, entonces cubre cuestionario, seccion, pregunta, puntos, respuesta, acepta, explicacion, aleatorio y los comentarios con #. |
-| **CA4** | **Versión:** dado que la especificación está terminada, cuando se guarda en el repositorio, entonces el documento está marcado como versión 0.1. |
+| **Como:** | Equipo de desarrollo |
+| **Quiero:** | Escribir la especificación del lenguaje (gramática y notación) |
+| **Para:** | Que el equipo y la profesora sepan qué se puede escribir y qué no |
+
+**Criterios de Aceptación Técnicos**
+
+| Escenario | Dado (Entrada / Estado) | Cuando (Lógica) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Gramática | La especificación está escrita | Se revisa la gramática | Está en EBNF (una forma estándar de escribir las reglas de un lenguaje) |
+| 2. Notación con ejemplos | La especificación está escrita | Se revisa la notación | Se explica con al menos un ejemplo por tipo de pregunta |
+| 3. Palabras clave | La especificación está escrita | Se compara con el backlog | Cubre cuestionario, seccion, pregunta, puntos, respuesta, acepta, explicacion, aleatorio y los comentarios con # |
+| 4. Versión | La especificación está terminada | Se guarda en el repositorio | El documento está marcado como versión 0.1 |
+
+#### HU Técnica: HT-03 Definir los contratos entre las partes del programa
 
 Prioridad Alta | 3 SP | Sprint 1
 
-| CUESTIONA | |
+| | |
 |---|---|
-| **HT-03** | Definir los contratos entre las partes del programa |
-| **HISTORIA** | **Como equipo de desarrollo, quiero definir qué recibe y qué devuelve cada parte del programa (analizador, validador, intérprete y exportadores), para que cada integrante pueda trabajar su parte sin esperar a que otra esté terminada.** |
-| **ROL** | Equipo de desarrollo |
-| **ACCIÓN** | Definir qué recibe y qué devuelve cada parte del programa (analizador, validador, intérprete y exportadores) |
-| **PARA** | Que cada integrante pueda trabajar su parte sin esperar a que otra esté terminada |
-| **CA1** | **Estructura del cuestionario:** dado que el documento de contratos, cuando se revisa la estructura del cuestionario ya leído, entonces están definidos cuestionario, sección, pregunta y opción con sus campos. |
-| **CA2** | **Formato de error:** dado que el documento de contratos, cuando se revisa cómo se reporta un error, entonces está definido con archivo, línea, columna y mensaje. |
-| **CA3** | **Entradas y salidas:** dado que una parte del programa (analizador, validador, intérprete o exportadores), cuando se consulta el documento, entonces indica qué datos recibe y cuáles devuelve. |
-| **CA4** | **Revisión del equipo:** dado que el documento está terminado, cuando antes de empezar a programar, entonces está en el repositorio, en Markdown, y todo el equipo lo revisó. |
+| **Como:** | Equipo de desarrollo |
+| **Quiero:** | Definir qué recibe y qué devuelve cada parte del programa (analizador, validador, intérprete y exportadores) |
+| **Para:** | Que cada integrante pueda trabajar su parte sin esperar a que otra esté terminada |
+
+**Criterios de Aceptación Técnicos**
+
+| Escenario | Dado (Entrada / Estado) | Cuando (Lógica) | Entonces (Resultado) |
+|---|---|---|---|
+| 1. Estructura del cuestionario | El documento de contratos | Se revisa la estructura del cuestionario ya leído | Están definidos cuestionario, sección, pregunta y opción con sus campos |
+| 2. Formato de error | El documento de contratos | Se revisa cómo se reporta un error | Está definido con archivo, línea, columna y mensaje |
+| 3. Entradas y salidas | Una parte del programa (analizador, validador, intérprete o exportadores) | Se consulta el documento | Indica qué datos recibe y cuáles devuelve |
+| 4. Revisión del equipo | El documento está terminado | Antes de empezar a programar | Está en el repositorio, en Markdown, y todo el equipo lo revisó |
 
 ## Detalle: historias de usuario
 
