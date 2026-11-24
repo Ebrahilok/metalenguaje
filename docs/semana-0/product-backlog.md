@@ -3,39 +3,45 @@
 **Responsable:** Ebrahim Ali (Product Owner)  
 **Última actualización:** 24 de noviembre de 2026
 
-Las historias técnicas (HT) y las de usuario (HU) están mezcladas y ordenadas por sprint; dentro de cada sprint la de prioridad más alta va arriba. La estimación está en **puntos de historia (SP)** con la escala 1, 2, 3, 5, 8: es esfuerzo relativo, no horas. El sprint asignado se confirma en cada Sprint Planning.
+Las historias de usuario (HU) y las técnicas (HT) van en tablas separadas. En cada tabla están ordenadas por sprint y, dentro de cada sprint, la de prioridad más alta va arriba. La estimación está en **puntos de historia (SP)** con la escala 1, 2, 3, 5, 8: es esfuerzo relativo, no horas. El sprint asignado se confirma en cada Sprint Planning.
 
-## Backlog priorizado
+## Backlog: historias de usuario (50 SP)
 
-| ID | Item / Historia | Prioridad | Estimación | Asignación / Estado |
+| ID | Historia de usuario | Prioridad | Estimación | Asignación / Estado |
 |---|---|---|---|---|
-| HT-01 | Investigar metalenguajes existentes | Alta (1) | 3 SP | Sprint 1 (Pendiente) |
-| HT-02 | Especificación del lenguaje (gramática y notación) | Alta (2) | 5 SP | Sprint 1 (Pendiente) |
-| HT-03 | Definir los contratos entre las partes del programa | Alta (3) | 3 SP | Sprint 1 (Pendiente) |
-| HU-01 | Crear un cuestionario con título y comentarios | Alta (4) | 5 SP | Sprint 2 (Pendiente) |
-| HU-02 | Preguntas de opción múltiple y de verdadero/falso | Alta (5) | 5 SP | Sprint 2 (Pendiente) |
-| HU-05 | Mensajes de error con número de línea | Alta (6) | 5 SP | Sprint 2 (Pendiente) |
-| HU-03 | Preguntas de respuesta abierta | Alta (7) | 3 SP | Sprint 3 (Pendiente) |
-| HU-06 | Aplicar el cuestionario en consola | Alta (8) | 8 SP | Sprint 3 (Pendiente) |
-| HU-04 | Puntos por pregunta y secciones | Media (9) | 5 SP | Sprint 3 (Pendiente) |
-| HU-10 | Validar el lenguaje con la docente | Media (10) | 3 SP | Sprint 3 (Pendiente) |
-| HU-09 | Manual de usuario con ejemplos | Alta (11) | 3 SP | Sprint 4 (Pendiente) |
-| HU-08 | Exportar el cuestionario a JSON y HTML | Media (12) | 8 SP | Sprint 4 (Pendiente) |
-| HU-07 | Retroalimentación y orden aleatorio | Baja (13) | 5 SP | Sprint 4 (Pendiente) |
+| HU-01 | Como docente, quiero crear un archivo .cst con el nombre del cuestionario y poder dejar notas dentro, para empezar a armarlo y recordar de dónde saqué cada pregunta. | Alta (1) | 5 SP | Sprint 2 (Pendiente) |
+| HU-02 | Como docente, quiero escribir preguntas con varias opciones (marcando la correcta) y preguntas de verdadero o falso, para hacer preguntas de selección y preguntas rápidas. | Alta (2) | 5 SP | Sprint 2 (Pendiente) |
+| HU-05 | Como docente, quiero que cuando me equivoque el programa me diga la línea y el problema, para corregirlo rápido. | Alta (3) | 5 SP | Sprint 2 (Pendiente) |
+| HU-03 | Como docente, quiero escribir una pregunta donde el alumno escribe la respuesta, para evaluar definiciones cortas. | Alta (4) | 3 SP | Sprint 3 (Pendiente) |
+| HU-06 | Como estudiante, quiero contestar el cuestionario en la terminal, para practicar y ver mi calificación. | Alta (5) | 8 SP | Sprint 3 (Pendiente) |
+| HU-04 | Como docente, quiero asignar puntos a cada pregunta y dividir el cuestionario en secciones, para que la calificación sea justa y los temas estén organizados. | Media (6) | 5 SP | Sprint 3 (Pendiente) |
+| HU-10 | Como docente, quiero probar la herramienta con un cuestionario mío y dar mi opinión, para confirmar que el lenguaje me sirve y detectar qué le falta. | Media (7) | 3 SP | Sprint 3 (Pendiente) |
+| HU-09 | Como docente, quiero un manual corto con ejemplos, para aprender a usar el lenguaje sin ayuda. | Alta (8) | 3 SP | Sprint 4 (Pendiente) |
+| HU-08 | Como docente o desarrollador, quiero obtener el cuestionario en JSON y en una página HTML, para usarlo en otra aplicación o compartirlo con los alumnos. | Media (9) | 8 SP | Sprint 4 (Pendiente) |
+| HU-07 | Como docente, quiero escribir una explicación para cada pregunta y hacer que las preguntas y opciones salgan en desorden, para que el alumno entienda en qué se equivocó y no se copien entre ellos. | Baja (10) | 5 SP | Sprint 4 (Pendiente) |
 
-**Historias de usuario:** 50 SP. **Historias técnicas:** 11 SP. **Total:** 61 SP.
+## Backlog: historias técnicas (11 SP)
 
-## Historias por sprint
+| ID | Historia técnica | Prioridad | Estimación | Asignación / Estado |
+|---|---|---|---|---|
+| HT-01 | Como equipo de desarrollo, quiero revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL), para tomar ideas y no copiar uno que ya existe. | Alta (1) | 3 SP | Sprint 1 (Pendiente) |
+| HT-02 | Como equipo de desarrollo, quiero escribir la especificación del lenguaje (gramática y notación), para que el equipo y la profesora sepan qué se puede escribir y qué no. | Alta (2) | 5 SP | Sprint 1 (Pendiente) |
+| HT-03 | Como equipo de desarrollo, quiero definir qué recibe y qué devuelve cada parte del programa (analizador, validador, intérprete y exportadores), para que cada integrante pueda trabajar su parte sin esperar a que otra esté terminada. | Alta (3) | 3 SP | Sprint 1 (Pendiente) |
+
+**Total del backlog:** 61 SP.
+
+## Detalle: historias técnicas
 
 ### Sprint 1: Fundamentos y especificación v0.1
 
-Del 16 al 22 de noviembre de 2026. Puntos comprometidos: 11.
+Del 16 al 22 de noviembre de 2026.
 
-Historia técnica | Prioridad Alta | 3 SP | Sprint 1
+Prioridad Alta | 3 SP | Sprint 1
 
 | CUESTIONA | |
 |---|---|
 | **HT-01** | Investigar metalenguajes existentes |
+| **HISTORIA** | **Como equipo de desarrollo, quiero revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL), para tomar ideas y no copiar uno que ya existe.** |
 | **ROL** | Equipo de desarrollo |
 | **ACCIÓN** | Revisar cómo están hechos otros metalenguajes (JSON Schema, XML, Regex, ANTLR y SQL) |
 | **PARA** | Tomar ideas y no copiar uno que ya existe |
@@ -44,11 +50,12 @@ Historia técnica | Prioridad Alta | 3 SP | Sprint 1
 | **CA3** | **Fuentes:** dado que el documento de investigación, cuando se revisan las referencias, entonces las fuentes están citadas. |
 | **CA4** | **Conclusión:** dado que el documento llegó al final, cuando se lee el último apartado, entonces termina con una conclusión de qué ideas se van a usar en Cuestiona. |
 
-Historia técnica | Prioridad Alta | 5 SP | Sprint 1
+Prioridad Alta | 5 SP | Sprint 1
 
 | CUESTIONA | |
 |---|---|
 | **HT-02** | Especificación del lenguaje (gramática y notación) |
+| **HISTORIA** | **Como equipo de desarrollo, quiero escribir la especificación del lenguaje (gramática y notación), para que el equipo y la profesora sepan qué se puede escribir y qué no.** |
 | **ROL** | Equipo de desarrollo |
 | **ACCIÓN** | Escribir la especificación del lenguaje (gramática y notación) |
 | **PARA** | Que el equipo y la profesora sepan qué se puede escribir y qué no |
@@ -57,11 +64,12 @@ Historia técnica | Prioridad Alta | 5 SP | Sprint 1
 | **CA3** | **Palabras clave:** dado que la especificación está escrita, cuando se compara con el backlog, entonces cubre cuestionario, seccion, pregunta, puntos, respuesta, acepta, explicacion, aleatorio y los comentarios con #. |
 | **CA4** | **Versión:** dado que la especificación está terminada, cuando se guarda en el repositorio, entonces el documento está marcado como versión 0.1. |
 
-Historia técnica | Prioridad Alta | 3 SP | Sprint 1
+Prioridad Alta | 3 SP | Sprint 1
 
 | CUESTIONA | |
 |---|---|
 | **HT-03** | Definir los contratos entre las partes del programa |
+| **HISTORIA** | **Como equipo de desarrollo, quiero definir qué recibe y qué devuelve cada parte del programa (analizador, validador, intérprete y exportadores), para que cada integrante pueda trabajar su parte sin esperar a que otra esté terminada.** |
 | **ROL** | Equipo de desarrollo |
 | **ACCIÓN** | Definir qué recibe y qué devuelve cada parte del programa (analizador, validador, intérprete y exportadores) |
 | **PARA** | Que cada integrante pueda trabajar su parte sin esperar a que otra esté terminada |
@@ -70,15 +78,18 @@ Historia técnica | Prioridad Alta | 3 SP | Sprint 1
 | **CA3** | **Entradas y salidas:** dado que una parte del programa (analizador, validador, intérprete o exportadores), cuando se consulta el documento, entonces indica qué datos recibe y cuáles devuelve. |
 | **CA4** | **Revisión del equipo:** dado que el documento está terminado, cuando antes de empezar a programar, entonces está en el repositorio, en Markdown, y todo el equipo lo revisó. |
 
+## Detalle: historias de usuario
+
 ### Sprint 2: Núcleo, analizador y validador
 
-Del 23 al 29 de noviembre de 2026. Puntos comprometidos: 15.
+Del 23 al 29 de noviembre de 2026.
 
-Historia de usuario | Prioridad Alta | 5 SP | Sprint 2
+Prioridad Alta | 5 SP | Sprint 2
 
 | CUESTIONA | |
 |---|---|
 | **HU-01** | Crear un cuestionario con título y comentarios |
+| **HISTORIA** | **Como docente, quiero crear un archivo .cst con el nombre del cuestionario y poder dejar notas dentro, para empezar a armarlo y recordar de dónde saqué cada pregunta.** |
 | **ROL** | Docente |
 | **ACCIÓN** | Crear un archivo .cst con el nombre del cuestionario y poder dejar notas dentro |
 | **PARA** | Empezar a armarlo y recordar de dónde saqué cada pregunta |
@@ -89,11 +100,12 @@ Historia de usuario | Prioridad Alta | 5 SP | Sprint 2
 | **CA5** | **# dentro de comillas:** dado que un # dentro de un texto entre comillas, cuando se procesa la línea, entonces no cuenta como comentario. |
 | **CA6** | **Archivo sin contenido:** dado que un archivo vacío o que solo tiene comentarios, cuando se procesa el archivo, entonces se marca como error, porque no tiene título. |
 
-Historia de usuario | Prioridad Alta | 5 SP | Sprint 2
+Prioridad Alta | 5 SP | Sprint 2
 
 | CUESTIONA | |
 |---|---|
 | **HU-02** | Preguntas de opción múltiple y de verdadero/falso |
+| **HISTORIA** | **Como docente, quiero escribir preguntas con varias opciones (marcando la correcta) y preguntas de verdadero o falso, para hacer preguntas de selección y preguntas rápidas.** |
 | **ROL** | Docente |
 | **ACCIÓN** | Escribir preguntas con varias opciones (marcando la correcta) y preguntas de verdadero o falso |
 | **PARA** | Hacer preguntas de selección y preguntas rápidas |
@@ -105,11 +117,12 @@ Historia de usuario | Prioridad Alta | 5 SP | Sprint 2
 | **CA6** | **Valor inválido:** dado que una pregunta de verdadero/falso, cuando en respuesta se escribe otro valor, entonces se marca como error. |
 | **CA7** | **Sin respuesta:** dado que una pregunta de verdadero/falso sin respuesta, cuando se procesa el archivo, entonces muestra un error. |
 
-Historia de usuario | Prioridad Alta | 5 SP | Sprint 2
+Prioridad Alta | 5 SP | Sprint 2
 
 | CUESTIONA | |
 |---|---|
 | **HU-05** | Mensajes de error con número de línea |
+| **HISTORIA** | **Como docente, quiero que cuando me equivoque el programa me diga la línea y el problema, para corregirlo rápido.** |
 | **ROL** | Docente |
 | **ACCIÓN** | Que cuando me equivoque el programa me diga la línea y el problema |
 | **PARA** | Corregirlo rápido |
@@ -120,13 +133,14 @@ Historia de usuario | Prioridad Alta | 5 SP | Sprint 2
 
 ### Sprint 3: Ampliación y validación con la profesora
 
-Del 30 de noviembre al 6 de diciembre de 2026. Puntos comprometidos: 19.
+Del 30 de noviembre al 6 de diciembre de 2026.
 
-Historia de usuario | Prioridad Alta | 3 SP | Sprint 3
+Prioridad Alta | 3 SP | Sprint 3
 
 | CUESTIONA | |
 |---|---|
 | **HU-03** | Preguntas de respuesta abierta |
+| **HISTORIA** | **Como docente, quiero escribir una pregunta donde el alumno escribe la respuesta, para evaluar definiciones cortas.** |
 | **ROL** | Docente |
 | **ACCIÓN** | Escribir una pregunta donde el alumno escribe la respuesta |
 | **PARA** | Evaluar definiciones cortas |
@@ -134,11 +148,12 @@ Historia de usuario | Prioridad Alta | 3 SP | Sprint 3
 | **CA2** | **Sin respuestas aceptadas:** dado que una pregunta abierta sin acepta, cuando se procesa el archivo, entonces muestra un error, porque necesita al menos una respuesta aceptada. |
 | **CA3** | **Comparación flexible:** dado que una respuesta aceptada y una respuesta del alumno, cuando se comparan, entonces se ignoran mayúsculas, acentos y espacios de más. |
 
-Historia de usuario | Prioridad Alta | 8 SP | Sprint 3
+Prioridad Alta | 8 SP | Sprint 3
 
 | CUESTIONA | |
 |---|---|
 | **HU-06** | Aplicar el cuestionario en consola |
+| **HISTORIA** | **Como estudiante, quiero contestar el cuestionario en la terminal, para practicar y ver mi calificación.** |
 | **ROL** | Estudiante |
 | **ACCIÓN** | Contestar el cuestionario en la terminal |
 | **PARA** | Practicar y ver mi calificación |
@@ -148,11 +163,12 @@ Historia de usuario | Prioridad Alta | 8 SP | Sprint 3
 | **CA4** | **Revisión de errores:** dado que el cuestionario terminó, cuando se muestra el resultado, entonces se ven las preguntas que estuvieron mal y cuál era la respuesta correcta. |
 | **CA5** | **Archivo con errores:** dado que un archivo .cst con errores, cuando se intenta aplicar, entonces no se aplica y se muestran los errores. |
 
-Historia de usuario | Prioridad Media | 5 SP | Sprint 3
+Prioridad Media | 5 SP | Sprint 3
 
 | CUESTIONA | |
 |---|---|
 | **HU-04** | Puntos por pregunta y secciones |
+| **HISTORIA** | **Como docente, quiero asignar puntos a cada pregunta y dividir el cuestionario en secciones, para que la calificación sea justa y los temas estén organizados.** |
 | **ROL** | Docente |
 | **ACCIÓN** | Asignar puntos a cada pregunta y dividir el cuestionario en secciones |
 | **PARA** | Que la calificación sea justa y los temas estén organizados |
@@ -164,11 +180,12 @@ Historia de usuario | Prioridad Media | 5 SP | Sprint 3
 | **CA6** | **Sin sección:** dado que preguntas antes de la primera sección, cuando se procesa el archivo, entonces quedan en una sección general. |
 | **CA7** | **Resultado por sección:** dado que un cuestionario con secciones, cuando se muestra el resultado, entonces aparece el puntaje por sección y el total. |
 
-Historia de usuario | Prioridad Media | 3 SP | Sprint 3
+Prioridad Media | 3 SP | Sprint 3
 
 | CUESTIONA | |
 |---|---|
 | **HU-10** | Validar el lenguaje con la docente |
+| **HISTORIA** | **Como docente, quiero probar la herramienta con un cuestionario mío y dar mi opinión, para confirmar que el lenguaje me sirve y detectar qué le falta.** |
 | **ROL** | Docente |
 | **ACCIÓN** | Probar la herramienta con un cuestionario mío y dar mi opinión |
 | **PARA** | Confirmar que el lenguaje me sirve y detectar qué le falta |
@@ -179,13 +196,14 @@ Historia de usuario | Prioridad Media | 3 SP | Sprint 3
 
 ### Sprint 4: Cierre, documentación y demostración
 
-Del 7 al 13 de diciembre de 2026. Puntos comprometidos: 16.
+Del 7 al 13 de diciembre de 2026.
 
-Historia de usuario | Prioridad Alta | 3 SP | Sprint 4
+Prioridad Alta | 3 SP | Sprint 4
 
 | CUESTIONA | |
 |---|---|
 | **HU-09** | Manual de usuario con ejemplos |
+| **HISTORIA** | **Como docente, quiero un manual corto con ejemplos, para aprender a usar el lenguaje sin ayuda.** |
 | **ROL** | Docente |
 | **ACCIÓN** | Un manual corto con ejemplos |
 | **PARA** | Aprender a usar el lenguaje sin ayuda |
@@ -193,11 +211,12 @@ Historia de usuario | Prioridad Alta | 3 SP | Sprint 4
 | **CA2** | **Palabras clave:** dado que el manual terminado, cuando el docente busca una pregunta o palabra clave, entonces explica cada tipo de pregunta y cada palabra clave del lenguaje. |
 | **CA3** | **Ejemplos:** dado que el manual terminado, cuando se revisan los ejemplos, entonces hay al menos 5 válidos y 5 inválidos con el resultado esperado. |
 
-Historia de usuario | Prioridad Media | 8 SP | Sprint 4
+Prioridad Media | 8 SP | Sprint 4
 
 | CUESTIONA | |
 |---|---|
 | **HU-08** | Exportar el cuestionario a JSON y HTML |
+| **HISTORIA** | **Como docente o desarrollador, quiero obtener el cuestionario en JSON y en una página HTML, para usarlo en otra aplicación o compartirlo con los alumnos.** |
 | **ROL** | Docente o desarrollador |
 | **ACCIÓN** | Obtener el cuestionario en JSON y en una página HTML |
 | **PARA** | Usarlo en otra aplicación o compartirlo con los alumnos |
@@ -208,11 +227,12 @@ Historia de usuario | Prioridad Media | 8 SP | Sprint 4
 | **CA5** | **Respuestas ocultas:** dado que la página generada, cuando el alumno revisa el código visible, entonces las respuestas correctas no aparecen. |
 | **CA6** | **Archivo con errores:** dado que un archivo .cst con errores, cuando se intenta exportar, entonces no se genera ningún archivo y se muestran los errores. |
 
-Historia de usuario | Prioridad Baja | 5 SP | Sprint 4
+Prioridad Baja | 5 SP | Sprint 4
 
 | CUESTIONA | |
 |---|---|
 | **HU-07** | Retroalimentación y orden aleatorio |
+| **HISTORIA** | **Como docente, quiero escribir una explicación para cada pregunta y hacer que las preguntas y opciones salgan en desorden, para que el alumno entienda en qué se equivocó y no se copien entre ellos.** |
 | **ROL** | Docente |
 | **ACCIÓN** | Escribir una explicación para cada pregunta y hacer que las preguntas y opciones salgan en desorden |
 | **PARA** | Que el alumno entienda en qué se equivocó y no se copien entre ellos |
