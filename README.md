@@ -51,7 +51,7 @@ Todos participamos en el desarrollo, aunque cada quien tenga un rol definido.
 
 ## Documentación
 
-- [Entrega de la Semana 0 (PDF)](docs/semana-0/entrega-semana-0.pdf)
+- [Entrega final de la Semana 0 (PDF)](docs/semana-0/entrega-semana-0.pdf) y [Word](docs/semana-0/entrega-semana-0.docx)
 - [Visión del producto](docs/semana-0/vision-del-producto.md)
 - [Product Backlog](docs/semana-0/product-backlog.md)
 - [Definition of Done](docs/semana-0/definition-of-done.md)
