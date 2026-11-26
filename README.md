@@ -11,14 +11,14 @@ El proyecto se trabaja con **Scrum** en 4 sprints de una semana.
 | Etapa | Contenido | Estado |
 |---|---|---|
 | Semana 0: Preparación | Visión, backlog inicial, Definition of Done, roles | ✅ Entregada |
-| Sprint 1: Fundamentos y especificación | Investigación de metalenguajes, gramática y notación v0.1, contratos entre las partes del programa | ⏳ Pendiente |
+| Sprint 1: Fundamentos y especificación | Investigación de metalenguajes, gramática y notación v0.1, contratos entre las partes del programa | ✅ Entregado |
 | Sprint 2: Núcleo | Analizador léxico y sintáctico, semántica, pruebas unitarias | ⏳ Pendiente |
 | Sprint 3: Ampliación y validación | Más construcciones, mensajes de error, ejemplos, validación con la docente | ⏳ Pendiente |
 | Sprint 4: Cierre | Manual de usuario, documentación técnica, demo final | ⏳ Pendiente |
 
 ## Una idea de cómo se va a ver
 
-Esto es solo un **boceto preliminar**. La sintaxis oficial se define en el Sprint 1 y puede cambiar.
+Así se ve un archivo `.cst` con la [especificación v0.1](docs/especificacion/especificacion-v0.1.md) del Sprint 1.
 
 ```text
 cuestionario "Repaso de Procesadores de Lenguajes"
@@ -52,6 +52,11 @@ Todos participamos en el desarrollo, aunque cada quien tenga un rol definido.
 ## Documentación
 
 - [Entrega final de la Semana 0 (PDF)](docs/semana-0/entrega-semana-0.pdf) y [Word](docs/semana-0/entrega-semana-0.docx)
+- [Entrega del Sprint 1 (PDF)](docs/semana-1/entrega-semana-1.pdf) y [Word](docs/semana-1/entrega-semana-1.docx)
+- [Investigación de metalenguajes](docs/especificacion/investigacion-metalenguajes.md)
+- [Especificación del lenguaje v0.1](docs/especificacion/especificacion-v0.1.md)
+- [Contratos entre las partes del programa](docs/especificacion/contratos.md)
+- [Actas del Sprint 1](docs/sprints/sprint-1/)
 - [Visión del producto](docs/semana-0/vision-del-producto.md)
 - [Product Backlog](docs/semana-0/product-backlog.md)
 - [Definition of Done](docs/semana-0/definition-of-done.md)
@@ -72,6 +77,8 @@ metalenguaje/
 ├── README.md
 ├── docs/
 │   ├── semana-0/          # Visión, backlog, DoD y roles
+│   ├── semana-1/          # Entrega del Sprint 1 (PDF y Word)
+│   ├── especificacion/    # Investigación, especificación v0.1 y contratos
 │   ├── sprints/           # Actas, sprint backlogs y burndown de cada sprint
 │   │   └── plantillas/
 │   └── uso-de-ia.md

@@ -9,7 +9,7 @@ Las fechas se confirman en cada Sprint Planning.
 | Sprint | Objetivo | Inicio | Fin (Review y Retrospective) |
 |---|---|---|---|
 | Semana 0 | Preparación: visión, backlog, DoD, roles | 12/11/2026 | 12/11/2026 |
-| Sprint 1 | Fundamentos y especificación v0.1 | 16/11/2026 | 22/11/2026 |
+| Sprint 1 | Fundamentos y especificación v0.1 | 24/11/2026 | 26/11/2026 |
 | Sprint 2 | Núcleo: analizador y validador | 23/11/2026 | 29/11/2026 |
 | Sprint 3 | Ampliación y validación con la docente | 30/11/2026 | 06/12/2026 |
 | Sprint 4 | Cierre, documentación y demo | 07/12/2026 | 13/12/2026 |

@@ -1,7 +1,7 @@
 # Product Backlog
 
 **Responsable:** Ebrahim Ali (Product Owner)  
-**Última actualización:** 24 de noviembre de 2026
+**Última actualización:** 26 de noviembre de 2026 (cierre del Sprint 1)
 
 Las historias técnicas (HT) y las de usuario (HU) están mezcladas y ordenadas por sprint; dentro de cada sprint la de prioridad más alta va arriba. La estimación está en **puntos de historia (SP)** con la escala 1, 2, 3, 5, 8: es esfuerzo relativo, no horas. El sprint asignado se confirma en cada Sprint Planning.
 
@@ -9,9 +9,9 @@ Las historias técnicas (HT) y las de usuario (HU) están mezcladas y ordenadas 
 
 | ID | Item / Historia | Prioridad | Estimación | Asignación / Estado |
 |---|---|---|---|---|
-| HT-01 | Investigar metalenguajes existentes | Alta (1) | 3 SP | Sprint 1 (Pendiente) |
-| HT-02 | Especificación del lenguaje (gramática y notación) | Alta (2) | 5 SP | Sprint 1 (Pendiente) |
-| HT-03 | Definir los contratos entre las partes del programa | Alta (3) | 3 SP | Sprint 1 (Pendiente) |
+| HT-01 | Investigar metalenguajes existentes | Alta (1) | 3 SP | Sprint 1 (Terminado) |
+| HT-02 | Especificación del lenguaje (gramática y notación) | Alta (2) | 5 SP | Sprint 1 (Terminado) |
+| HT-03 | Definir los contratos entre las partes del programa | Alta (3) | 3 SP | Sprint 1 (Terminado) |
 | HU-01 | Crear un cuestionario con título y comentarios | Alta (4) | 5 SP | Sprint 2 (Pendiente) |
 | HU-02 | Preguntas de opción múltiple y de verdadero/falso | Alta (5) | 5 SP | Sprint 2 (Pendiente) |
 | HU-05 | Mensajes de error con número de línea | Alta (6) | 5 SP | Sprint 2 (Pendiente) |
@@ -29,7 +29,7 @@ Las historias técnicas (HT) y las de usuario (HU) están mezcladas y ordenadas 
 
 ### Sprint 1: Fundamentos y especificación v0.1
 
-Del 16 al 22 de noviembre de 2026. Puntos comprometidos: 11.
+Del 24 al 26 de noviembre de 2026. Puntos comprometidos: 11. Puntos terminados: 11.
 
 Historia técnica | Prioridad Alta | 3 SP | Sprint 1
 

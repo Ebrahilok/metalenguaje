@@ -7,6 +7,7 @@ Como lo permite el enunciado del proyecto, el equipo usó herramientas de inteli
 | 12/11/2026 | Claude (Anthropic) | Apoyo para redactar la visión del producto, el backlog inicial, la Definition of Done y el README de la Semana 0, y para preparar la estructura del repositorio. | El equipo eligió el dominio (cuestionarios), los roles y el alcance, y revisó y ajustó los documentos. |
 | 17/11/2026 | Claude (Anthropic) | Apoyo para aplicar las correcciones de la profesora al backlog: unir historias parecidas, separar las historias técnicas y agregar la vista de historias. | El equipo revisó que los criterios de aceptación y los puntos tuvieran sentido. |
 | 24/11/2026 | Claude (Anthropic) | Apoyo para armar la entrega final de la Semana 0: pasar las historias al formato de la profesora (ROL, ACCIÓN, PARA y CA1, CA2…), mezclar historias técnicas y de usuario por sprint y actualizar el equipo a 5 integrantes. | El equipo revisó el orden, los puntos y los criterios antes de entregar. |
+| 26/11/2026 | Claude (Anthropic) | Apoyo para redactar la entrega del Sprint 1: la investigación de metalenguajes, la especificación v0.1 (metamodelo, gramática EBNF y ejemplos), los contratos y las actas del sprint. | El equipo decidió el reparto de las historias, revisó que la gramática aceptara los ejemplos y ajustó la Review y la Retrospectiva. |
 
 ## Compromiso del equipo
 
